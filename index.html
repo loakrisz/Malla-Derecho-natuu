@@ -14,7 +14,111 @@
   <button class="reset-btn" onclick="reiniciarProgreso()">Reiniciar Progreso</button>
   <div id="malla" class="contenedor-malla">
     <!-- Aquí irá todo el contenido de los ramos de los 10 semestres -->
+  </div<!-- PRIMER AÑO -->
+<section>
+  <h2>Primer Año</h2>
+  <div class="semestre">
+    <h3>I Semestre</h3>
+    <button class="ramo" id="DER1101">Derecho Romano I</button>
+    <button class="ramo" id="DER1103">Introducción a la Abogacía</button>
+    <button class="ramo" id="DER1105">Bases del Derecho Público</button>
+    <button class="ramo" id="DER1107">Filosofía</button>
+    <button class="ramo" id="DER1104">Teoría General del Derecho</button>
+    <button class="ramo" id="DER1108">Fuentes, Interpretación y Argumentación Jurídica</button>
   </div>
+  <div class="semestre">
+    <h3>II Semestre</h3>
+    <button class="ramo" id="DER1102" data-prereq="DER1101">Derecho Romano II</button>
+    <button class="ramo" id="DER1109">Derecho Procesal I</button>
+    <button class="ramo" id="DER1110">Derecho Constitucional</button>
+    <button class="ramo" id="DER1111">Investigación Jurídica</button>
+    <button class="ramo" id="DER1112">Historia del Derecho</button>
+  </div>
+</section>
+
+<!-- SEGUNDO AÑO -->
+<section>
+  <h2>Segundo Año</h2>
+  <div class="semestre">
+    <h3>III Semestre</h3>
+    <button class="ramo" id="DER1113">Derecho Civil I</button>
+    <button class="ramo" id="DER1115">Derecho Penal I</button>
+    <button class="ramo" id="DER1116">Derecho Económico</button>
+    <button class="ramo" id="DER1121">Derecho Comercial I</button>
+    <button class="ramo" id="E1">Electivo Diversidad I</button>
+  </div>
+  <div class="semestre">
+    <h3>IV Semestre</h3>
+    <button class="ramo" id="DER1117" data-prereq="DER1113">Derecho Civil II</button>
+    <button class="ramo" id="DER1120" data-prereq="DER1115">Derecho Penal II</button>
+    <button class="ramo" id="DER1126" data-prereq="DER1121">Derecho Comercial II</button>
+    <button class="ramo" id="DER1118">Economía y Derecho</button>
+    <button class="ramo" id="DER1150" data-prereq="DER1117,DER1120,DER1126,DER1118,E1">Evaluación Ciclo Inicial</button>
+  </div>
+</section>
+
+<!-- TERCER AÑO -->
+<section>
+  <h2>Tercer Año</h2>
+  <div class="semestre">
+    <h3>V Semestre</h3>
+    <button class="ramo" id="DER1122" data-prereq="DER1117">Derecho Civil III</button>
+    <button class="ramo" id="DER1125" data-prereq="DER1109">Derecho Procesal Penal</button>
+    <button class="ramo" id="DER1124">Derecho Administrativo</button>
+    <button class="ramo" id="DER1127" data-prereq="DER1126">Derecho Comercial III</button>
+    <button class="ramo" id="DER1133">Derecho Tributario I</button>
+    <button class="ramo" id="ELAC">ELAC</button>
+  </div>
+  <div class="semestre">
+    <h3>VI Semestre</h3>
+    <button class="ramo" id="DER1128" data-prereq="DER1122">Derecho Civil IV</button>
+    <button class="ramo" id="DER1130" data-prereq="DER1125">Derecho Procesal Penal II</button>
+    <button class="ramo" id="DER1129">Derecho Internacional Público</button>
+    <button class="ramo" id="DER1134" data-prereq="DER1133">Derecho Tributario II</button>
+    <button class="ramo" id="ELTE">ELTE</button>
+  </div>
+</section>
+
+<!-- CUARTO AÑO -->
+<section>
+  <h2>Cuarto Año</h2>
+  <div class="semestre">
+    <h3>VII Semestre</h3>
+    <button class="ramo" id="DER1131" data-prereq="DER1128">Derecho Civil V</button>
+    <button class="ramo" id="DER1132">Derecho Laboral I</button>
+    <button class="ramo" id="DER1123">Resolución Colaborativa de Conflictos</button>
+    <button class="ramo" id="DER1135">Filosofía del Derecho</button>
+    <button class="ramo" id="E2">Electivo Diversidad II</button>
+  </div>
+  <div class="semestre">
+    <h3>VIII Semestre</h3>
+    <button class="ramo" id="DER1139" data-prereq="DER1131">Derecho Civil VI</button>
+    <button class="ramo" id="DER1143">Derecho Procesal de Familia</button>
+    <button class="ramo" id="DER1145">Negociación, Mediación y Arbitraje</button>
+    <button class="ramo" id="DER1146" data-prereq="DER1132">Derecho Laboral II</button>
+    <button class="ramo" id="DER1141">Seminario de Investigación</button>
+  </div>
+</section>
+
+<!-- QUINTO AÑO -->
+<section>
+  <h2>Quinto Año</h2>
+  <div class="semestre">
+    <h3>IX Semestre</h3>
+    <button class="ramo" id="DER1148">Clínica de Litigación</button>
+    <button class="ramo" id="DER1152">Clínica Institucional</button>
+    <button class="ramo" id="DER1153">Derecho de los Pueblos Indígenas</button>
+    <button class="ramo" id="DER1154">Derecho Ambiental</button>
+    <button class="ramo" id="DER1151" data-prereq="DER1139,DER1146,DER1141">Evaluación Ciclo Intermedio</button>
+    <button class="ramo" id="E3">Electivo III</button>
+  </div>
+  <div class="semestre">
+    <h3>X Semestre</h3>
+    <button class="ramo" id="DER1149">Examen de Grado</button>
+    <button class="ramo" id="DER1155">Electivo IV</button>
+    <button class="ramo" id="ETI143">Ética Profesional</button>
+  </div>
+</section>>
   <script src="script.js"></script>
   <script>
     function reiniciarProgreso() {
