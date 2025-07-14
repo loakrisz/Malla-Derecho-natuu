@@ -118,3 +118,7 @@ button.ramo.aprobado::after {
   font-family: 'Segoe UI', sans-serif;
   animation: aparecer 1s ease-in;
 }
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
