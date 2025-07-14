@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malla Derecho Interactiva</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>Malla Curricular Derecho</h1>
+  <div class="barra-avance">
+    <div class="progreso" id="progreso-barra"></div>
+  </div>
+  <button class="reset-btn" onclick="reiniciarProgreso()">Reiniciar Progreso</button>
+  <div id="malla" class="contenedor-malla">
+    <!-- Aquí irá todo el contenido de los ramos de los 10 semestres -->
+  </div>
+  <script src="script.js"></script>
+  <script>
+    function reiniciarProgreso() {
+      localStorage.removeItem("progresoRamos");
+      location.reload();
+    }
+  </script>
+</body>
+</html>
