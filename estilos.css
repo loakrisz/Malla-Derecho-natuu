@@ -103,3 +103,18 @@ button.ramo.aprobado::after {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+.mensaje-final {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: #ffe0f0;
+  color: #a2006d;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', sans-serif;
+  animation: aparecer 1s ease-in;
+}
