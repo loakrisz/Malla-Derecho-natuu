@@ -94,12 +94,10 @@ button.ramo.aprobado::after {
 }
 
 /* Animaciones */
-@keyframes fadeIn {
+fadein{
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
-@keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
@@ -118,7 +116,7 @@ button.ramo.aprobado::after {
   font-family: 'Segoe UI', sans-serif;
   animation: aparecer 1s ease-in;
 }
-@keyframes aparecer {
+aparecer {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
