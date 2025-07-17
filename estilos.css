@@ -67,7 +67,7 @@ button.ramo.aprobado {
 }
 
 button.ramo.aprobado::after {
-  content: "✖";
+  content: "Aprobado";
   position: absolute;
   right: 10px;
   top: 5px;
