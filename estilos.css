@@ -19,7 +19,7 @@ h2, h3 {
 
 .contenedor-malla {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
   align-items: center;
   animation: fadeInUp 1s ease;
